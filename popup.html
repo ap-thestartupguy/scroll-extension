@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Scroll Extension</title>
+  <style>
+    body {
+      width: 300px;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    #playPause {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    #playPause:hover {
+      background-color: #45a049;
+    }
+    #speedControl {
+      width: 80%;
+      margin: 20px auto;
+    }
+    #speedValue {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Auto Scroll</h1>
+  <button id="playPause">Play</button>
+  <input type="range" id="speedControl" min="1" max="10" value="5">
+  <div id="speedValue">Speed: 5</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
